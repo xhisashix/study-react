@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Footer } from '../components/Footer'
-import { Links } from '../components/Links'
-import Headline from '../components/Headline'
+import { Main } from '../components/Main'
 
-export function About() {
+export default function About() {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,11 +12,7 @@ export function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Headline  title="about" />
-
-        <Links/>
-      </main>
+      <Main title="about"/>
 
       <Footer />
     </div>
